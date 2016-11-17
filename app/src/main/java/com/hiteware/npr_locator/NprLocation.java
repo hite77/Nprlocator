@@ -32,6 +32,12 @@ public class NprLocation {
         latitude = Math.toRadians(latitude);
         longitude = Math.toRadians(longitude);
 
+        // each degree on a great circle of Earth is 60 nautical miles
+        // 60 nautical miles = 69.0468 miles
+
+        //double distance1 = 60 * angle1;
+        //double distance = 69.0468 * angle1; miles
+
         return Math.toDegrees(
                 Math.acos(Math.sin(latitude)*
                 Math.sin(Math.toRadians(stationInfo.getLatitude()))
