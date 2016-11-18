@@ -8,7 +8,7 @@ public class StationInfo {
     private final double longitude;
     private final String stationId;
 
-    public StationInfo(double latitude, double longitude, String stationId) {
+    public StationInfo(String stationId, double latitude, double longitude) {
         this.latitude = latitude;
         this.longitude = longitude;
         this.stationId = stationId;
