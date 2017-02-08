@@ -1,6 +1,5 @@
 package com.hiteware.npr_locator;
 
-import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.os.Bundle;
@@ -44,13 +43,12 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder notificationBuilder =
                 new NotificationCompat.Builder(getApplicationContext())
                         .setSmallIcon(R.mipmap.ic_launcher)
-//                        .setVibrate(new long[]{1000, 1000, 1000, 1000, 1000, 1000})
                         .setContentTitle("NprLocation")
                         .setContentText(nearestStation.getText())
-                        .setDefaults(Notification.DEFAULT_ALL);
+                        .setVibrate(new long[]{0l}); // Passing null here silently fails
 
         NotificationManager notificationManager = (NotificationManager) getApplication().getSystemService(Context.NOTIFICATION_SERVICE);
-
+        notificationManager.cancel(notificationId);
         notificationManager.notify(notificationId, notificationBuilder.build());
     }
 }
