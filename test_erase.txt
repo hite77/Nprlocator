@@ -1,0 +1,3 @@
+eyJrIjoiMmsxYkl4N2RPVm9CdXh1eHJwMkcwdkFUeFlqQkhpcGciLCJuIjoiYWRtaW4iLCJpZCI6MX0=
+
+curl -H "Authorization: eyJrIjoiMmsxYkl4N2RPVm9CdXh1eHJwMkcwdkFUeFlqQkhpcGciLCJuIjoiYWRtaW4iLCJpZCI6MX0=" http://localhost/api/dashboards/db/mydash
